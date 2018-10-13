@@ -17,7 +17,7 @@ def play():
     if discriminator > selectionDiscriminators[item]:
         play()
     playerselection = input("Please Enter a Choice of Rock, Paper, or Scissors. Rock|Paper|Scissors\n")
-    if (playerselection != "rock") and (playerselection != "paper") and (playerselection != "scissors"):
+    if playerselection.lower() not in selection:
         print("Error Accounting Response")
         play()
     else:
